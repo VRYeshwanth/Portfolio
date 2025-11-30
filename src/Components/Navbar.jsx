@@ -19,7 +19,7 @@ export default function Navbar() {
                             key={item}
                             className="px-4 py-2 rounded-xl text-black dark:text-white hover:bg-neutral-900 hover:text-white dark:hover:bg-neutral-800 transition-all duration-200"
                         >
-                            {item}
+                            <a href={`#${item.toLowerCase()}`}>{item}</a>
                         </li>
                     ))}
                 </ul>
