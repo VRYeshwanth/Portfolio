@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar";
 import Home from "./pages/Home";
+import Skills from "./pages/Skills";
 
 export default function App() {
     return (
@@ -7,6 +8,7 @@ export default function App() {
             <Navbar />
             <div className="w-full">
                 <Home />
+                <Skills />
             </div>
         </div>
     );
