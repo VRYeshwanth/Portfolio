@@ -2,7 +2,7 @@ export default function Home() {
     return (
         <section
             id="home"
-            className="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-4 dark:bg-neutral-950 dark:text-neutral-100 animate-fade-in"
+            className="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-4 dark:bg-neutral-950 dark:text-neutral-100 scroll-mt-20"
         >
             <h1 className="text-3xl md:text-4xl text-center">Hi , I'm</h1>
             <span className="text-5xl md:text-7xl font-bold  text-center">
@@ -25,14 +25,14 @@ export default function Home() {
             <div className="flex gap-8">
                 <a
                     href="#projects"
-                    className="text-lg md:text-xl px-2 md:px-4 py-1 md:py-2 rounded-xl text-black bg-white border border-neutral-700 hover:bg-neutral-200 transition duration-300 dark:text-white dark:bg-neutral-950 dark:hover:bg-neutral-700 cursor-pointer"
+                    className="text-lg md:text-xl p-2 md:px-4 md:py-2 rounded-xl text-black bg-white border border-neutral-700 hover:bg-neutral-200 transition duration-300 dark:text-white dark:bg-neutral-950 dark:hover:bg-neutral-700 cursor-pointer"
                 >
                     View Projects
                 </a>
                 <a
                     href="/VR Yeshwanth_Resume.pdf"
                     download
-                    className="text-lg md:text-xl px-2 md:px-4 py-1 md:py-2 rounded-xl text-black bg-white border border-neutral-700 hover:bg-neutral-200 transition duration-300 dark:text-white dark:bg-neutral-950 dark:hover:bg-neutral-700 cursor-pointer"
+                    className="text-lg md:text-xl p-2 md:px-4 md:py-2 rounded-xl text-black bg-white border border-neutral-700 hover:bg-neutral-200 transition duration-300 dark:text-white dark:bg-neutral-950 dark:hover:bg-neutral-700 cursor-pointer"
                 >
                     Download CV
                 </a>

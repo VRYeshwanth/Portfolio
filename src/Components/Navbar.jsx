@@ -17,9 +17,14 @@ export default function Navbar() {
                     {list.map((item) => (
                         <li
                             key={item}
-                            className="px-4 py-2 rounded-xl text-black dark:text-white hover:bg-neutral-900 hover:text-white dark:hover:bg-neutral-800 transition-all duration-200"
+                            className="py-2 rounded-xl text-black dark:text-white hover:bg-neutral-900 hover:text-white dark:hover:bg-neutral-800 transition-all duration-200"
                         >
-                            <a href={`#${item.toLowerCase()}`}>{item}</a>
+                            <a
+                                href={`#${item.toLowerCase()}`}
+                                className="px-4 py-2"
+                            >
+                                {item}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -49,12 +54,17 @@ export default function Navbar() {
             {menuOpen && (
                 <div className="absolute top-20 left-0 w-full bg-white dark:bg-black border-b border-neutral-300 dark:border-neutral-800 flex flex-col items-center py-4 md:hidden">
                     {list.map((item) => (
-                        <div
+                        <li
                             key={item}
-                            className="w-full text-center py-3 text-lg text-black dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-900 transition-all cursor-pointer"
+                            className="w-full text-center text-lg text-black dark:text-white hover:bg-neutral-200 dark:hover:bg-neutral-900 transition-all cursor-pointer"
                         >
-                            {item}
-                        </div>
+                            <a
+                                href={`#${item.toLowerCase()}`}
+                                className="flex justify-center w-full py-3"
+                            >
+                                {item}
+                            </a>
+                        </li>
                     ))}
 
                     <button
