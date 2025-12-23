@@ -30,7 +30,7 @@ export default function Home() {
                     View Projects
                 </a>
                 <a
-                    href="/VR Yeshwanth_Resume.pdf"
+                    href="./VR Yeshwanth_Resume.pdf"
                     download
                     className="text-lg md:text-xl p-2 md:px-4 md:py-2 rounded-xl text-black bg-white border border-neutral-700 hover:bg-neutral-200 transition duration-300 dark:text-white dark:bg-neutral-950 dark:hover:bg-neutral-700 cursor-pointer"
                 >
