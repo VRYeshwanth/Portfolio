@@ -8,7 +8,7 @@ export default function Contacts() {
             <h1 className="text-3xl md:text-4xl font-bold text-center">
                 Contacts
             </h1>
-            <p className="text-xl">
+            <p className="text-xl text-center">
                 I’m open to internships, collaborations, and learning
                 opportunities.
             </p>
