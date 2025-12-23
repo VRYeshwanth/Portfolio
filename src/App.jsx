@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 
 export default function App() {
     return (
@@ -9,6 +10,7 @@ export default function App() {
             <div className="w-full">
                 <Home />
                 <Skills />
+                <Projects />
             </div>
         </div>
     );
