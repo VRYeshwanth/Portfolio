@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Contacts from "./pages/Contacts";
 
 export default function App() {
     return (
@@ -11,6 +12,7 @@ export default function App() {
                 <Home />
                 <Skills />
                 <Projects />
+                <Contacts />
             </div>
         </div>
     );
