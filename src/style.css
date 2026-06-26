@@ -2,6 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        @apply bg-neutral-50 text-neutral-800 dark:bg-neutral-950 dark:text-neutral-100 transition-colors duration-300 antialiased;
+    }
+
+    /* Custom Forest Green Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        @apply bg-neutral-100 dark:bg-neutral-900;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-forest-600/30 hover:bg-forest-600/60 rounded-full transition-colors duration-200;
+    }
+}
+
+/* Glassmorphism custom classes */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(45, 106, 79, 0.1);
+}
+
+.dark .glass-panel {
+    background: rgba(23, 32, 28, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(82, 183, 136, 0.08);
+}
+
+/* Grid & dot textures */
+.bg-grid-pattern {
+    background-size: 50px 50px;
+    background-image: 
+        linear-gradient(to right, rgba(45, 106, 79, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(45, 106, 79, 0.03) 1px, transparent 1px);
+}
+
+.dark .bg-grid-pattern {
+    background-image: 
+        linear-gradient(to right, rgba(82, 183, 136, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(82, 183, 136, 0.02) 1px, transparent 1px);
+}
+
+/* Accessibility overrides */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
